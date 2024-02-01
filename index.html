@@ -1,1 +1,105 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        html {
+            background: #262626;
+            color: #F6F6F6;
+            font-family: system-ui;
+            font-size: 2rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        h1 {
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+            text-align: center;
+            margin: 1rem auto;
+        }
+        h2 {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            letter-spacing: -1px;
+            font-weight: 900;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.9);
+            text-wrap: balance;
+            & img {
+                height: 64px;
+                width: auto;
+            }
+            & small {
+                font-size: 50%;
+                font-family: ui-monospace, monospace;
+                color: rgba(255,255,255,0.3);
+                display: block;
+                font-weight: normal;
+                margin-top: 0.25rem;
+            }
+        }
+        p {
+            color: rgba(255,255,255,0.4);
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #FFF;
+            display: block;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .description {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+        .project {
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <title>Ben Ubois</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Making Products <br>for Humans</h1>
+
+        <a href="https://feedbin.com" class="project">
+            <h2>
+                <span>
+                    Feedbin
+                    <small>feedbin.com</small>
+                </span>
+                <img src="images/feedbin-logo.svg" alt="Feedbin Logo"/>
+            </h2>
+            <p>Follow your passions with RSS, email newsletters, podcasts, and YouTube.</p>
+            <img src="images/feedbin.png" width="2354" height="1411" alt="Feedbin"/>
+        </a>
+
+        <a href="https://airshow.fm" class="project">
+            <h2>
+                <span>
+                    Airshow
+                    <small>airshow.fm</small>
+                </span>
+                <img src="images/airshow-logo.png" alt="Airshow Logo"/>
+            </h2>
+            <p>A podcast app that helps you listen more and manage less.</p>
+            <img src="images/airshow.png" width="2420" height="1584" alt="Airshow"/>
+        </a>
+    </div>
+</body>
+</html>
