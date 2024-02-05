@@ -3,9 +3,14 @@
 <head>
     <meta charset="utf-8">
     <style>
+        :root {
+            --color-700: #F6F6F6;
+            --color-600: rgba(255, 255, 255, 0.9);
+            --color-500: rgba(255,255,255,0.4);
+        }
         html {
-            background: #262626;
-            color: #F6F6F6;
+            background: #071E22;
+            color: var(--color-700);
             font-family: system-ui;
             font-size: 2rem;
             -webkit-font-smoothing: antialiased;
@@ -20,7 +25,7 @@
             letter-spacing: -1px;
             margin-bottom: 2rem;
             text-align: center;
-            margin: 1rem auto;
+            margin: 6rem auto;
         }
         h2 {
             display: flex;
@@ -30,7 +35,7 @@
             font-weight: 900;
             justify-content: space-between;
             margin-bottom: 1rem;
-            color: rgba(255,255,255,0.9);
+            color: var(--color-600);
             text-wrap: balance;
             & img {
                 height: 64px;
@@ -39,14 +44,14 @@
             & small {
                 font-size: 50%;
                 font-family: ui-monospace, monospace;
-                color: rgba(255,255,255,0.3);
+                color: var(--color-500);
                 display: block;
                 font-weight: normal;
                 margin-top: 0.25rem;
             }
         }
         p {
-            color: rgba(255,255,255,0.4);
+            color: var(--color-500);
             font-weight: 300;
             margin-bottom: 2rem;
         }
