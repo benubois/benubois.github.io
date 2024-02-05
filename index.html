@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <style>
         :root {
-            --color-700: #F6F6F6;
-            --color-600: rgba(255, 255, 255, 0.9);
-            --color-500: rgba(255,255,255,0.4);
+            --color-700:    white;
+            --color-600:    rgba(255, 255, 255, 0.9);
+            --color-500:    rgba(255, 255, 255, 0.4);
+            --border-color: rgba(255, 255, 255, 0.1);
         }
         html {
             background: #071E22;
@@ -21,6 +22,7 @@
             max-width: 100%;
         }
         h1 {
+            font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: -1px;
             margin-bottom: 2rem;
@@ -35,7 +37,7 @@
             font-weight: 900;
             justify-content: space-between;
             margin-bottom: 1rem;
-            color: var(--color-600);
+            color: var(--color-700);
             text-wrap: balance;
             & img {
                 height: 64px;
@@ -56,20 +58,33 @@
             margin-bottom: 2rem;
         }
         a {
-            color: #FFF;
+            color: white;
             display: block;
             text-decoration: none;
         }
-        .container {
+        footer {
+            display: flex;
+            justify-content: center;
+            margin: 4rem 0;
+            & li {
+                margin: 0;
+                padding: 0;
+            }
+            & ul {
+                display: flex;
+                list-style-type: none;
+                gap: 1rem;
+            }
+            & a {
+                color: var(--color-500);
+            }
+        }
+        main {
             max-width: 800px;
             margin: 0 auto;
         }
-        .description {
-            max-width: 70%;
-            margin: 0 auto;
-        }
         .project {
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid var(--border-color);
             border-radius: 1rem;
             padding: 1rem;
             margin-bottom: 2rem;
@@ -79,7 +94,7 @@
     <title>Ben Ubois</title>
 </head>
 <body>
-    <div class="container">
+    <main>
         <h1>Making Products <br>for Humans</h1>
 
         <a href="https://feedbin.com" class="project">
@@ -100,11 +115,18 @@
                     Airshow
                     <small>airshow.fm</small>
                 </span>
-                <img src="images/airshow-logo.png" alt="Airshow Logo"/>
+                <img src="images/airshow-logo.png" width="314" height="423" alt="Airshow Logo"/>
             </h2>
             <p>A podcast app that helps you listen more and manage less.</p>
             <img src="images/airshow.png" width="2420" height="1584" alt="Airshow"/>
         </a>
-    </div>
+
+        <footer>
+            <ul>
+                <li><a href="https://github.com/benubois">GitHub</a></li>
+                <li><a href="https://ruby.social/@benubois">Mastodon</a></li>
+            </ul>
+        </footer>
+    </main>
 </body>
 </html>
